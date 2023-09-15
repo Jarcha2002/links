@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./wallhaven-e76xlo.jpg'); /* Reemplazar con la URL de tu imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+.fondo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.rectangulo {
+    background-color: rgba(255, 255, 255, 0.404); /* Color de fondo con efecto de blur */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el rectángulo */
+    width: 15%; /* Aumenta el ancho del rectángulo al 70% del contenedor */
+}
+
+.opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.opcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.opcion a {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.opcion img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 30px; /* Aumenta el ancho del icono */
+    height: 30px; /* Aumenta la altura del icono */
+    margin-left: 10px;
+}
+
+
+.animation-container {
+    position: fixed;
+    right: 0; /* Alineado a la derecha de la ventana del navegador */
+    top: 0; /* Alineado en la parte superior de la ventana */
+    width: 100px; /* Ancho de la animación */
+    height: 100%; /* Altura igual a la ventana */
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.282), transparent); /* Fondo con gradiente */
+    animation: airflow 8s linear infinite; /* Nombre de la animación, duración, tipo de temporización y repetición */
+}
+
+@keyframes airflow {
+    0% {
+        right: -100px; /* Inicio de la animación: fuera del área visible */
+    }
+    100% {
+        right: 100%; /* Final de la animación: totalmente visible en la derecha */
+    }
+}
