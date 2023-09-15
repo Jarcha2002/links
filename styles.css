@@ -55,21 +55,4 @@ body {
 }
 
 
-.animation-container {
-    position: fixed;
-    right: 0; /* Alineado a la derecha de la ventana del navegador */
-    top: 0; /* Alineado en la parte superior de la ventana */
-    width: 100px; /* Ancho de la animación */
-    height: 100%; /* Altura igual a la ventana */
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.282), transparent); /* Fondo con gradiente */
-    animation: airflow 8s linear infinite; /* Nombre de la animación, duración, tipo de temporización y repetición */
-}
 
-@keyframes airflow {
-    0% {
-        right: -100px; /* Inicio de la animación: fuera del área visible */
-    }
-    100% {
-        right: 100%; /* Final de la animación: totalmente visible en la derecha */
-    }
-}
